@@ -1,5 +1,5 @@
 ---
-title : "Hallo wereld, opnieuw, nieuwe wereld"
+title : "Welkom op Yascha-Dev.Digital"
 ---
 
 # {{title}}
