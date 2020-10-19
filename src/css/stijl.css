@@ -15,8 +15,22 @@ body {
 	margin: 5vw auto;
 }
 
+nav {
+padding: 3rem;
+
+}
+
 nav a {
 	text-decoration: none;
+	transition: 0.25s ease-out;
+}
+
+
+nav a:hover {
+	border-radius: 5px 5px;
+	padding: 4px;
+	transition: 0.25s ease-out;
+	background-color: #F0A202;
 }
 
 h1 {
@@ -27,7 +41,7 @@ font-weight: 350;
 
 
 .headersection {
-	background-color: black;
+	background-color: #202C59;
 	margin-bottom: 4rem;
 	width: 100vw;
 	height: 99vh;
@@ -62,7 +76,7 @@ header nav ul li a {
 
 header nav ul li a.selected {
 	color: white;
-	background-color: blue;
+	background-color: #F0A202;
 	border-radius: 5px 5px;
 	padding: 4px;
 }
