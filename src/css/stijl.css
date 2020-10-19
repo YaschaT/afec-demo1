@@ -1,0 +1,144 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@100;300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+	font-size: 62,5%;
+}
+
+body {
+	width: 80vw;
+	font-size: 2rem;
+	font-family: "helvetica neue",helvetica;
+	scroll-behavior: smooth;
+	margin: 5vw auto;
+}
+
+nav a {
+	text-decoration: none;
+}
+
+h1 {
+padding: 3rem;
+font-family: lato;
+font-weight: 350;
+}
+
+
+.headersection {
+	background-color: black;
+	margin-bottom: 4rem;
+	width: 100vw;
+	height: 99vh;
+}
+
+p {
+text-align: center;
+font-size: 1.3rem;
+font-weight: 300;
+font-family: Catamaran;
+}
+
+header h1 a {
+	color: white;
+	text-decoration: none;
+	font-size: 7rem;
+}
+
+header nav ul {
+	display: flex;
+	flex-direction: column;
+	margin-top: 8rem;
+}
+
+header nav ul li {
+	margin-top: 1rem;
+}
+
+header nav ul li a {
+	color: white;
+}
+
+header nav ul li a.selected {
+	color: white;
+	background-color: blue;
+	border-radius: 5px 5px;
+	padding: 4px;
+}
+
+header {
+	margin-bottom: 5rem;
+}
+
+main h2 {
+	font-size: 1.3rem;
+	text-align: center;
+	letter-spacing: 0.34rem;
+	font-weight: 300;
+	margin-bottom: 6rem;
+}
+
+main p {
+	line-height: 3rem;
+	margin-bottom: 10rem;
+}
+
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+
+
+main img {
+	display: block;
+	margin: 0 auto 3rem auto;
+}
+
+main h3 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 3rem;
+}
+
+main ul.blog li a {
+	border-radius: 5px 10px;
+	color: blue;
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+main ul.blog li {
+	margin-bottom: 2rem;
+}
+
+main {
+	margin-bottom: 5rem;
+}
+
+
+footer p {
+font-size: 1.45rem;
+}
+
+@media (min-width: 800px) {
+	header nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 40rem;
+		margin-top: 0;
+	}
+
+	header nav ul li {
+		margin-top: 0;
+	}
+
+	header nav {
+		position: absolute;
+		top: 5.5rem;
+		right: 10vw;
+	}
+}
