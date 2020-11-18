@@ -1,110 +1,112 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@100;300;400;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;300;500;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
 
-* {
-	font-size: 62,5%;
-}
 
 body {
-	width: 80vw;
+	width: 95vw;
+	margin: 5rem auto;
 	font-size: 2rem;
 	font-family: "helvetica neue",helvetica;
+	color: #38373e;
 	scroll-behavior: smooth;
-	margin: 5vw auto;
-}
-
-nav {
-padding: 3rem;
-
-}
-
-nav a {
-	text-decoration: none;
-	transition: 0.25s ease-out;
 }
 
 
-nav a:hover {
-	border-radius: 5px 5px;
-	padding: 4px;
-	transition: 0.25s ease-out;
-	background-color: #F0A202;
-}
-
-h1 {
-padding: 3rem;
-font-family: lato;
-font-weight: 350;
-}
-
-
-.headersection {
-	background-color: #202C59;
-	margin-bottom: 4rem;
-	width: 100vw;
-	height: 99vh;
-}
 
 p {
-text-align: center;
+text-align: left;
 font-size: 1.3rem;
 font-weight: 300;
 font-family: Catamaran;
 }
 
+
+.wallpaper {
+	position: relative;
+	background-color: blue;
+	width: 100vw;
+	height: 20vh;
+	margin-left: -1.3rem;
+	margin-top: -10rem;
+}
+
+
+.image1 {
+width: 100vw;
+height: 50vh;
+}
+
+
+
+
 header h1 a {
-	color: white;
+	color: blue;
 	text-decoration: none;
-	font-size: 7rem;
+	font-size: 3.5rem;
+	font-weight: 600;
 }
 
 header nav ul {
 	display: flex;
-	flex-direction: column;
-	margin-top: 8rem;
+	flex-direction: row;
+	margin-top: 11rem;
+	font-family: lato;
+	justify-content: center;
+	font-weight
 }
 
+
+
+
 header nav ul li {
-	margin-top: 1rem;
+	margin-top: 6rem;
 }
 
 header nav ul li a {
 	color: white;
+	text-decoration: none;
+	font-weight: 300;
+	padding: 1.7rem;
+
+}
+
+span {
+	font-size: 1.2rem;
+	font-family: Catamaran;
+
 }
 
 header nav ul li a.selected {
-	color: white;
-	background-color: #F0A202;
-	border-radius: 5px 5px;
-	padding: 4px;
+	color: transparent;
+	background-color: #0D01FF;
+	padding: 1rem;
+	border-radius: 7rem;
 }
 
 header {
-	margin-bottom: 5rem;
+	margin-bottom: 15rem;
 }
 
 main h2 {
-	font-size: 1.3rem;
-	text-align: center;
-	letter-spacing: 0.34rem;
-	font-weight: 300;
-	margin-bottom: 6rem;
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 5rem;
+	padding-bottom: 3rem;
+	font-family: lato;
+	text-transform: uppercase;
+	line-height: 3.5rem;
+	color: blue;
 }
 
 main p {
 	line-height: 3rem;
-	margin-bottom: 10rem;
+	margin-bottom: 3rem;
 }
-
 
 img {
 	max-width: 100%;
-	max-height: 100%;
 }
-
-
 
 main img {
 	display: block;
@@ -114,14 +116,26 @@ main img {
 main h3 {
 	font-size: 2.25rem;
 	font-weight: 600;
-	margin-bottom: 3rem;
+	margin-bottom: 5rem;
+	padding-bottom: 3rem;
+	color:blue;
+	border-bottom: .1rem solid blue;
+}
+
+main h4 {
+	font-size: 2.25rem;
+	font-weight: 600;
+	margin-bottom: 5rem;
+	text-transform: uppercase;
+}
+
+main a {
+	text-decoration: none;
+	color: #38373e;
 }
 
 main ul.blog li a {
-	border-radius: 5px 10px;
-	color: blue;
-	font-size: 2rem;
-	text-decoration: none;
+	color: firebrick;
 }
 
 main ul.blog li {
@@ -132,17 +146,55 @@ main {
 	margin-bottom: 5rem;
 }
 
+ul.taglist, ul.postlist {
+	margin-bottom: 5rem;
+}
 
-footer p {
-font-size: 1.45rem;
+ul.taglist li, ul.postlist li{
+	margin-bottom: 3rem;
+}
+
+ul.taglist li a, ul.postlist li a {
+	background-color: blue;
+	color: white;
+	padding: .75rem;
+}
+
+a.morelink {
+	display: inline-block;
+	background-color: blue;
+	color: #faf0e4;
+	padding: 1.2rem;
+	margin-bottom: 3rem;
+	border-radius: 5rem;
+	font-size: 1.5rem;
+}
+
+nav.pagination a {
+	display: inline-block;
+	color: blue;
+	padding: 1.25rem;
+	margin-bottom: 9rem;
+}
+
+
+
+
+footer {
+	border-top: 0.2rem solid #38373e;
+	padding-top: 3rem;
 }
 
 @media (min-width: 800px) {
+	body {
+			width: 85vw;
+	}
+
 	header nav ul {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width: 40rem;
+		width: 32rem;
 		margin-top: 0;
 	}
 
@@ -153,6 +205,16 @@ font-size: 1.45rem;
 	header nav {
 		position: absolute;
 		top: 5.5rem;
-		right: 10vw;
+		right: 7.5vw;
+	}
+}
+
+@media (min-width: 1000px) {
+	body {
+			width: 75vw;
+	}
+
+	header nav {
+		right: 12.5vw;
 	}
 }
